@@ -1,0 +1,9 @@
+{
+  "name": "micro-backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "bench": "docker run -it --network host -v $(pwd)/scripts:/scripts grafana/k6 run /scripts/benchmark.js"
+  }
+}

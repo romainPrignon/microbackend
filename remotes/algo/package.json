@@ -1,0 +1,19 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "rm -rf dist/ && vite build",
+    "start": "tsx src/server.ts",
+    "serve": "http-server -p 8006 dist/"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.4",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.4"
+  }
+}

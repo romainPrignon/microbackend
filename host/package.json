@@ -1,0 +1,22 @@
+{
+  "name": "host",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev:microbackend": "tsx watch --no-warnings --experimental-vm-modules --env-file=.env src/server.ts microbackend",
+    "dev:microbackend_worker": "tsx watch --no-warnings --experimental-vm-modules --env-file=.env src/server.ts microbackend_worker",
+    "dev:microservice": "tsx watch --experimental-vm-modules --env-file=.env src/server.ts microservice",
+    "build": "rm -rf dist/ && tsc",
+    "start:microbackend": "node --no-warnings --experimental-vm-modules --env-file=.env dist/server.js microbackend",
+    "start:microservice": "node --env-file=.env dist/server.js microservice"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

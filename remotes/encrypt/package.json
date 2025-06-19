@@ -1,0 +1,19 @@
+{
+  "name": "encrypt",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "deno serve --watch --port 4000 --env-file -A src/main.ts",
+    "build": "rm -rf dist/ && vite build",
+    "start": "deno serve --port 4000 --env-file -A src/main.ts",
+    "serve": "http-server -p 8004 dist/"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.4",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "pino": "^9.7.0"
+  }
+}
